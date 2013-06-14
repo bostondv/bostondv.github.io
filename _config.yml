@@ -10,11 +10,9 @@ links:
   - name:         About
     url:          /about
   - name:         Blog
-    url:          http://bostondv.github.io
-  - name:         Email
-    url:          mailto:hello@bostondv.com
-  - name:         GitHub
-    url:          http://github.com/bostondv
+    url:          /
+  - name:         Work
+    url:          http://pomelodesign.com
 
 pygments:         true
 permalink:        pretty
