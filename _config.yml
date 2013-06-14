@@ -1,20 +1,20 @@
-title:            Scribble
-description:      A jekyll theme. Because I scribble.
-url:              # Site url.
-signoff:          # Your name.
-disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+title:            Boston
+description:      Musings about web development and design.
+url:              http://bostondv.github.io
+signoff:          Boston Dell-Vandenberg
+disqus_shortname: bostondv
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
-google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+google_analytics: UA-26745553-4
 
-links: 
+links:
   - name:         About
     url:          /about
   - name:         Blog
-    url:          http://muan.co
+    url:          http://bostondv.github.io
   - name:         Email
-    url:          mailto:hello@muan.co
+    url:          mailto:hello@bostondv.com
   - name:         GitHub
-    url:          http://github.com/muan
+    url:          http://github.com/bostondv
 
 pygments:         true
 permalink:        pretty
