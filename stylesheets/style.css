@@ -9,27 +9,50 @@ body {
   color: #303030;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 1.5;
   padding: 0;
   margin: 0; }
   body, body * {
     -webkit-font-smoothing: antialiased; }
 
+.header {
+  width: 100%;
+  max-width: 600px;
+  margin: 1.5em auto;
+}
+
 .logo {
-  font-size: 3em;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0.75em 0;
+  display: inline-block;
+  margin: 0 1.5em 0 0;
 }
   .logo a {
     color: #303030;
-    font-weight: 200;
+    font-size: 1.5em;
   }
 
-#go-back-home {}
-  #go-back-home:hover {
-    background-image: none; }
+.avatar {
+  border-radius: 50%;
+  margin-right: 0.5em;
+  width: 50px;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
+}
+
+.links {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .links li {
+    display: inline-block;
+  }
+  .links a {
+    margin: 0 0.5em;
+    font-weight: 400;
+  }
 
 .capitalize {
   text-transform: capitalize; }
@@ -50,7 +73,7 @@ body {
   text-align: center; }
 
 .small {
-  font-size: 11px; }
+  font-size: 12px; }
 
 .pull-left {
   float: left; }
@@ -179,7 +202,6 @@ a, .as-link {
     transition: all, 0.2s;
     color: #fff;
     cursor: pointer;
-    font-size: 12px;
     line-height: 24px;
     padding: 8px 17px;
     text-transform: uppercase;
@@ -241,8 +263,9 @@ ul.posts .datetime {
   text-transform: uppercase;
   float: right;
   color: #999;
-  font-size: 10px;
-  text-align: right; }
+  font-size: 12px;
+  text-align: right;
+  margin-top: 1em; }
   ul.posts a {
     font-size: 1.5em;
   }
@@ -261,20 +284,17 @@ section.post {
   section.post h1 {
     text-transform: uppercase;
     text-align: center;
-    line-height: 1.5em;
-    margin-bottom: 60px; }
+    margin-bottom: 40px; }
     section.post h1 .date {
       color: #d0d0d0;
-      font-size: 10px; }
+      font-size: 12px; }
   section.post iframe, section.post img {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
 
-section.post, section > p {
-  font-size: 14px;
-  line-height: 1.6em; }
+section.post, section > p {}
   section.post *, section > p * {
     max-width: 100%; }
   section.post blockquote, section > p blockquote {
@@ -327,13 +347,11 @@ pre {
   overflow-x: auto;
   padding: 10px 60px;
   width: 100%;
-  line-height: 1.2em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 code {
-  font-size: 13px;
   color: #888;
   background: #f9f9f9;
   padding: 0 4px; }

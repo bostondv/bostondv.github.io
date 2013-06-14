@@ -1,5 +1,5 @@
-<div class="block">
+<ul class="block links">
   {% for link in site.links %}
-    <a class="main" href="{{ link.url }}">{{ link.name }}</a>
+    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
   {% endfor %}
-</div>
+</ul>

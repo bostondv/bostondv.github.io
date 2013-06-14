@@ -9,7 +9,7 @@ google_analytics: UA-26745553-4
 links:
   - name:         About
     url:          /about
-  - name:         Blog
+  - name:         Articles
     url:          /
   - name:         Work
     url:          http://pomelodesign.com
