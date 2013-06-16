@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  $PAGE
+\*------------------------------------*/
+
+
+/**
+ * Page level wrapper
+ */
+.wrapper {
+  max-width: 900px;
+  margin: 4em auto;
+}
+
+/**
+ * Home page wrapper
+ */
+.page-home .wrapper {
+  margin-left: 16em;
+}

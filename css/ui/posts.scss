@@ -1,0 +1,72 @@
+/*------------------------------------*\
+  $POSTS
+\*------------------------------------*/
+
+.post-title {
+  font-size: 2.8em;
+  margin: 0.5em 0;
+}
+
+.post-date {
+  color: #999;
+  font-style: italic;
+}
+
+/**
+ * Next / prev post paging
+ */
+.paging {
+  .previous, .next {
+    display: inline-block;
+    font-size: 3em;
+    position: fixed;
+    top: 50%;
+    a {
+      color: #ddd;
+      padding: 0.5em;
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+  .next {
+    right: 0;
+  }
+  .previous {
+    left: 0;
+  }
+}
+
+/**
+ * Post author signoff
+ */
+.signoff {
+  background: rgba(0, 0, 0, 0.025);
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: rgba(0, 0, 0, 0.025);
+  margin: 4em 0 1em;
+  padding: 1em 1em 1em 7em;
+  position: relative;
+  .avatar {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    width: 5em;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+/**
+ * Comments
+ */
+.comments {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 2em 0 1em;
+  padding-top: 1em;
+}

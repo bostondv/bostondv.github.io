@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  $MISC
+\*------------------------------------*/
+
+/**
+ * Avatar
+ */
+.avatar {
+  display: inline-block;
+  img {
+    display: block;
+    border-radius: 50%;
+    max-width: 100%;
+  }
+}

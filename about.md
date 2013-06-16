@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: post
 title: About Me
 ---
 
-Hi there, I'm Boston. I am a multi-disciplined designer, developer and freelancer from Toronto.
+<span class="dropcap">H</span><span class="run-in">i there, I'm Boston Dell-Vandenberg.</span> A multi-disciplined designer, developer and freelancer from Toronto.
 
 ![Photo of Boston Dell-Vandenberg](/images/boston.jpg)
 
@@ -11,7 +11,7 @@ I run [Pomelo](http://pomelodesign.com), a boutique web development studio where
 
 I am passionate about creating great user experiences and inspiring designs for the web. To that extent I am an active [contributor](http://wordpress.org/plugins/enhanced-text-widget/) to WordPress [plugins](http://wordpress.org/plugins/ultimate-posts-widget/) and love tinkering with code, design, new software and tools.
 
-For detailed information about my qualifications, please see my CV on LinkedIn.
+For detailed information about my qualifications, please see [my CV](/cv/).
 
 ## Contact
 

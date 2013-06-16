@@ -1,0 +1,156 @@
+/*------------------------------------*\
+  $TYPOGRAPHY
+\*------------------------------------*/
+
+/**
+ * Body
+ */
+body {
+  font-family: $body-font;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.2;
+}
+
+.post-content {
+  h1, h2, h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 1.5em;
+    padding-bottom: 0.5em;
+  }
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.2em; }
+
+/**
+ * Links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  &:hover {
+    color: darken($brand-color, 20%);
+  }
+}
+
+p a {
+  font-weight: 700;
+}
+
+/**
+ * Images
+ */
+p img {
+  display: block;
+}
+
+/**
+ * Paragraphs
+ */
+.post-content p {
+
+}
+
+/**
+ * Code
+ */
+pre{
+  white-space: pre;
+  word-wrap: normal;
+  background-color: rgba(0, 0, 0, 0.025);
+  border-style: solid;
+  border-width: 1px 0;
+  border-top-color: rgba(0, 0, 0, 0.025);
+  border-bottom-color: rgba(0, 0, 0, 0.025);
+  overflow: auto;
+  color: #666;
+  padding: 1em 1.5em;
+
+  code {
+    background: none;
+  }
+}
+
+pre, code, kbd, samp{
+  font-family: Inconsolata, Monaco, Consolas, "Andale Mono",
+               "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+}
+
+code, kbd, samp{
+  background: rgba(0, 0, 0, 0.05);
+  color: #666;
+  padding: 0 0.1em;
+  pre & {
+    color: #fff;
+  }
+}
+
+/**
+ * Horizontal rules
+ */
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 1em 0;
+}
+
+/**
+ * Blockquote
+ */
+blockquote {
+  background: rgba(0, 0, 0, 0.025);
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: rgba(0, 0, 0, 0.025);
+  padding: 0 1.5em;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/**
+ * Run-in
+ */
+.run-in {
+  font-family: "Alegreya SC", serif;
+  font-size: 1.2em;
+  line-height: 1.1;
+}
+
+/**
+ * Drop cap
+ */
+.dropcap {
+  background: $brand-color;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  float: left;
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 1.41em;
+  margin-right: 0.25em;
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/**
+ * Lists
+ */
