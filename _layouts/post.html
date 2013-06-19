@@ -11,14 +11,15 @@
     <div class="wrapper">
       {% include pages.html %}
       <div class="content">
-        <section class="post">
-          <h1 class="post-title">
+        <section class="post" vocab="http://schema.org/" typeof="article">
+          <h1 class="post-title" property="name">
             {{ page.title }}
           </h1>
-          <div class="post-content">
+          <div class="post-content" property="articlebody">
             {{ content }}
           </div>
           {% if page.date %}
+            {% include meta.html %}
             {% include signoff.html %}
           {% endif %}
         </section>

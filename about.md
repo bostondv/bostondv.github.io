@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About Me
+permalink: /about/
 ---
 
 <span class="dropcap">H</span><span class="run-in">i there, I'm Boston Dell-Vandenberg.</span> A multi-disciplined designer, developer and freelancer from Toronto.

@@ -15,7 +15,8 @@ links:
     url:          http://pomelodesign.com
 
 pygments:         true
-permalink:        pretty
+permalink:        /:year/:month/:title
+paginate:         10
 markdown:         rdiscount
 rdiscount:
   extensions:     [smart]

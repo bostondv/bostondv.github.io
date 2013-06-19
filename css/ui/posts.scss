@@ -7,10 +7,32 @@
   margin: 0.5em 0;
 }
 
+.post-meta {
+  font-size: 0.8em;
+  margin: 1em 0;
+  p, ul {
+    margin: 0;
+  }
+}
+
 .post-date {
   color: #999;
   font-style: italic;
 }
+
+.post-categories {
+  color: #999;
+  font-style: italic;
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+  li.post-category:not(:last-child):after {
+    content: ",";
+  }
+}
+
 
 /**
  * Next / prev post paging
@@ -36,6 +58,7 @@
     left: 0;
   }
 }
+
 
 /**
  * Post author signoff
