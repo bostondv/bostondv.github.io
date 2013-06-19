@@ -6,17 +6,13 @@
   /**
    * Page
    */
-  body {
-    margin: 0 2em;
-  }
-
   .header {
     padding: 1em;
     width: 8em;
   }
 
   .wrapper {
-    margin-left: 10em;
+    margin-left: 12em;
   }
 
   /**
@@ -52,12 +48,8 @@
   /**
    * Page
    */
-  body {
-    margin: 1em 2em;
-  }
-
   .wrapper {
-    margin: 0;
+    margin: 0 2em;
   }
 
   /**
@@ -76,16 +68,21 @@
    */
   .header {
     border: 0;
-    padding: 0 0 0 5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0.5em 2em;
     position: relative;
     width: auto;
     height: auto;
     text-align: left;
-    .avatar {
-      position: absolute;
-      left: 0;
+    .logo {
+      display: inline-block;
       margin-right: 1em;
       width: 4em;
+      vertical-align: middle;
+    }
+    .avatar {
+      display: block;
+      width: auto;
     }
     .site-title {
       display: none;
@@ -96,9 +93,11 @@
   }
 
   .links {
+    display: inline-block;
     font-size: 1.2em;
     line-height: 2.5em;
     margin: 0 -0.5em;
+    vertical-align: middle;
     li {
       display: inline-block;
     }
