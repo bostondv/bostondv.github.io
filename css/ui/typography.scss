@@ -59,6 +59,11 @@ p img {
   display: block;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /**
  * Paragraphs
  */

@@ -4,11 +4,11 @@ Scribble
 A jekyll theme. [Want a demo? click and read instruction. :point_left:](http://scribble.muan.co/2013/05/06/scribble-the-jekyll-theme/)
 <br />(I am currently working on a collection of themes, here's [a preview for one of them](http://themes.muan.co/personal/2013/05/19/sore-throat/). You know how to [stay](https://twitter.com/muanchiou) [posted](https://github.com/muan). :flushed: )
 
-![screenshot](http://scribble.muan.co/images/screenshot.png)
+![screenshot](http://scribble.muan.co/img/screenshot.png)
 
-There is no clever design philosophy to talk about, I tried to find something to work with, and 'scribble' came to my mind. 
+There is no clever design philosophy to talk about, I tried to find something to work with, and 'scribble' came to my mind.
 
-This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS & CoffeeScript, though .scss & .coffee files wouldn't be included in the theme. 
+This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS & CoffeeScript, though .scss & .coffee files wouldn't be included in the theme.
 
 The theme is mobile optimised but I did not check browser compatibility. It looks great in Chrome, Safari and Firefox though.
 

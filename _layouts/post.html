@@ -1,36 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta content="{{ page.title }}" name="title">
-    <meta content="{{ page.title }}" name="og:title">
-    <title>{{ page.title }}</title>
-    {% include head.html %}
-  </head>
-  <body class="page-post">
-    {% include header_post.html %}
-    <div class="wrapper">
-      {% include pages.html %}
-      <div class="content">
-        <section class="post" vocab="http://schema.org/" typeof="article">
-          <h1 class="post-title" property="name">
-            {{ page.title }}
-          </h1>
-          <div class="post-content" property="articlebody">
-            {{ content }}
-          </div>
-          {% if page.date %}
-            {% include meta.html %}
-            {% include signoff.html %}
-          {% endif %}
-        </section>
-      </div>
-      {% if page.share == 'y' %}
-        {% include share.html %}
-      {% endif %}
-      {% if page.disqus == 'y' %}
-        {% include disqus.html %}
-      {% endif %}
+---
+layout: default
+---
+<section class="post" vocab="http://schema.org/" typeof="article">
+  {% if page.image %}
+    <div class="post-image">
+      <img src="{{ page.image }}" property="image">
     </div>
-    {% include footer.html %}
-  </body>
-</html>
+  {% endif %}
+  <h1 class="post-title" property="name">
+    {{ page.title }}
+  </h1>
+  <div class="post-content" property="articlebody">
+    {{ content }}
+  </div>
+  {% if page.date %}
+    {% include meta.html %}
+    {% include signoff.html %}
+  {% endif %}
+</section>
+{% include pages.html %}
+{% if page.share == 'y' %}
+  {% include share.html %}
+{% endif %}
+{% if page.disqus == 'y' %}
+  {% include disqus.html %}
+{% endif %}

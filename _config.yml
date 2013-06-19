@@ -7,10 +7,12 @@ facebook_appid:   # appid for like button, remove from /_includes/share.html if 
 google_analytics: UA-26745553-4
 
 links:
+  - name:         Home
+    url:          /
+    class:        home
   - name:         About
     url:          /about
-  - name:         Articles
-    url:          /
+    class:        about
   - name:         Work
     url:          http://pomelodesign.com
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content="{{ site.title }} - {{ site.description }}" property="og:title">
-    <title>{{ site.title }} - {{ site.description }}</title>
+    <meta content="{{ page.title }} &ndash; {{ site.title }}" property="og:title">
+    <title>{{ page.title }} &ndash; {{ site.title }}</title>
     {% include head.html %}
   </head>
-  <body class="page-home">
+  <body class="page--{{ page.class }}">
     {% include header.html %}
     <div class="wrapper">
       <div class="content">

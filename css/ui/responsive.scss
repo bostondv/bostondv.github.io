@@ -1,20 +1,124 @@
-@media (max-width: 480px) {
+/**
+ * Style adjustments for tablet sized screens
+ */
+@media only screen and (max-width: 65em) {
+
+  /**
+   * Page
+   */
   body {
-    padding: 0 10px; }
-    body #container ul.posts .datetime {
-      float: none;
-      display: block;
-      width: auto;
-      text-align: left; }
-    body #container #ind-instagram, body #container #ind-linkedin {
-      display: none; }
-    body #container .links, body #container .content {
-      padding: 15px; }
-      body #container .links section.post, body #container .content section.post {
-        margin: 0 -15px; }
-        body #container .links section.post > p, body #container .links section.post h1, body #container .links section.post .highlight, body #container .content section.post > p, body #container .content section.post h1, body #container .content section.post .highlight {
-          padding: 0 15px; }
-        body #container .links section.post > ul, body #container .links section.post > ol, body #container .content section.post > ul, body #container .content section.post > ol {
-          padding: 0 30px; }
-    body #container .content blockquote {
-      padding: 0 15px; } }
+    margin: 0 2em;
+  }
+
+  .header {
+    padding: 1em;
+    width: 8em;
+  }
+
+  .wrapper {
+    margin-left: 10em;
+  }
+
+  /**
+   * Post
+   */
+  .paging {
+    overflow: hidden;
+    margin: 1em 0;
+    .next,
+    .previous {
+      position: static;
+    }
+    .next {
+      float: right;
+    }
+    .previous {
+      float: left;
+    }
+  }
+
+  .comments {
+    margin: 1em 0;
+  }
+
+}
+
+
+/**
+ * Style adjustments for mobile sized screens
+ */
+@media only screen and (max-width: 35em) {
+
+  /**
+   * Page
+   */
+  body {
+    margin: 1em 2em;
+  }
+
+  .wrapper {
+    margin: 0;
+  }
+
+  /**
+   * Typography
+   */
+  body {
+    font-size: 0.9em;
+  }
+
+  .post-title {
+    font-size: 2.4em;
+  }
+
+  /**
+   * Header
+   */
+  .header {
+    border: 0;
+    padding: 0 0 0 5em;
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: left;
+    .avatar {
+      position: absolute;
+      left: 0;
+      margin-right: 1em;
+      width: 4em;
+    }
+    .site-title {
+      display: none;
+    }
+    .site-description {
+      display: none;
+    }
+  }
+
+  .links {
+    font-size: 1.2em;
+    line-height: 2.5em;
+    margin: 0 -0.5em;
+    li {
+      display: inline-block;
+    }
+    a {
+      display: inline-block;
+      padding: 0.5em;
+    }
+  }
+
+  /**
+   * Post
+   */
+  .signoff {
+    padding: 1em;
+    text-align: center;
+    .avatar {
+      position: static;
+      width: 7em;
+      margin-bottom: 1em;
+    }
+  }
+
+}

@@ -33,6 +33,16 @@
   }
 }
 
+.post-image {
+  margin: 1em 0;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+}
+
 
 /**
  * Next / prev post paging
@@ -78,7 +88,7 @@
     width: 5em;
   }
   h3 {
-    margin: 0;
+    margin: 0 0 0.25em;
   }
   p {
     margin: 0;

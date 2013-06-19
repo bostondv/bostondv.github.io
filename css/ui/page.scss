@@ -2,18 +2,21 @@
   $PAGE
 \*------------------------------------*/
 
+body {
+  margin: 0 3em;
+}
 
 /**
  * Page level wrapper
  */
 .wrapper {
-  max-width: 900px;
+  max-width: 50em;
   margin: 4em auto;
 }
 
 /**
  * Home page wrapper
  */
-.page-home .wrapper {
+.wrapper {
   margin-left: 16em;
 }

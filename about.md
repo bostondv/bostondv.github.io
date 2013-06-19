@@ -2,11 +2,12 @@
 layout: post
 title: About Me
 permalink: /about/
+class: about
 ---
 
 <span class="dropcap">H</span><span class="run-in">i there, I'm Boston Dell-Vandenberg.</span> A multi-disciplined designer, developer and freelancer from Toronto.
 
-![Photo of Boston Dell-Vandenberg](/images/boston.jpg)
+![Photo of Boston Dell-Vandenberg](/img/boston.jpg)
 
 I run [Pomelo](http://pomelodesign.com), a boutique web development studio where we specialize in designing and building unique web and mobile applications for small-medium businesses and startups.
 
