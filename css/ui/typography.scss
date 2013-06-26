@@ -8,7 +8,8 @@
 body {
   font-family: $body-font;
   font-weight: 400;
-  color: #444;
+  font-size: 87.5%;
+  color: $text-color;
   line-height: 1.5;
   -webkit-font-smoothing:antialiased;
 }
@@ -25,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-content {
   h1, h2, h3 {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #eee;
     margin-top: 1.5em;
     padding-bottom: 0.5em;
   }
@@ -74,18 +75,14 @@ img {
 /**
  * Code
  */
-pre{
+pre {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  color: #fff;
+  padding: 1em 1.5em;
+  overflow: auto;
   white-space: pre;
   word-wrap: normal;
-  background-color: rgba(0, 0, 0, 0.025);
-  border-style: solid;
-  border-width: 1px 0;
-  border-top-color: rgba(0, 0, 0, 0.025);
-  border-bottom-color: rgba(0, 0, 0, 0.025);
-  overflow: auto;
-  color: #666;
-  padding: 1em 1.5em;
-
   code {
     background: none;
   }
@@ -98,7 +95,8 @@ pre, code, kbd, samp{
 
 code, kbd, samp{
   background: rgba(0, 0, 0, 0.05);
-  color: #666;
+  border-radius: 3px;
+  color: lighten($text-color, 20%);
   padding: 0 0.1em;
   pre & {
     color: #fff;
@@ -110,7 +108,7 @@ code, kbd, samp{
  */
 hr {
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 2px solid #eee;
   margin: 1em 0;
 }
 
@@ -118,14 +116,14 @@ hr {
  * Blockquote
  */
 blockquote {
-  background: rgba(0, 0, 0, 0.025);
-  border-style: solid;
-  border-width: 1px 0;
-  border-color: rgba(0, 0, 0, 0.025);
-  padding: 0 1.5em;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  color: lighten($text-color, 20%);
   font-style: italic;
   margin-left: 0;
   margin-right: 0;
+  overflow: hidden;
+  padding: 0.5em 1.5em;
 }
 
 /**

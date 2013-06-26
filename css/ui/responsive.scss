@@ -1,18 +1,46 @@
 /**
+ * Next / prev post paging
+ */
+.paging {
+  .previous, .next {
+    display: inline-block;
+    font-size: 3em;
+    margin-top: -1.5em;
+    position: fixed;
+    top: 50%;
+    a {
+      color: #ddd;
+      padding: 0.5em;
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+  .next {
+    right: 0;
+  }
+  .previous {
+    left: 0;
+  }
+}
+
+/**
  * Style adjustments for tablet sized screens
  */
-@media only screen and (max-width: 65em) {
+@media only screen and (max-width: 49em) {
 
   /**
    * Page
    */
-  .header {
-    padding: 1em;
-    width: 8em;
+  .wrapper {
+    margin: 0 2em;
   }
 
-  .wrapper {
-    margin-left: 12em;
+  .header {
+    .btn-home {
+      left: 0.5em;
+      top: 0.5em;
+    }
   }
 
   /**
@@ -48,9 +76,7 @@
   /**
    * Page
    */
-  .wrapper {
-    margin: 0 2em;
-  }
+
 
   /**
    * Typography
@@ -66,46 +92,7 @@
   /**
    * Header
    */
-  .header {
-    border: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    padding: 0.5em 2em;
-    position: relative;
-    width: auto;
-    height: auto;
-    text-align: left;
-    .logo {
-      display: inline-block;
-      margin-right: 1em;
-      width: 4em;
-      vertical-align: middle;
-    }
-    .avatar {
-      display: block;
-      width: auto;
-    }
-    .site-title {
-      display: none;
-    }
-    .site-description {
-      display: none;
-    }
-  }
 
-  .links {
-    display: inline-block;
-    font-size: 1.2em;
-    line-height: 2.5em;
-    margin: 0 -0.5em;
-    vertical-align: middle;
-    li {
-      display: inline-block;
-    }
-    a {
-      display: inline-block;
-      padding: 0.5em;
-    }
-  }
 
   /**
    * Post

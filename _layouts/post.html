@@ -3,9 +3,7 @@ layout: default
 ---
 <section class="post" vocab="http://schema.org/" typeof="article">
   {% if page.image %}
-    <div class="post-image">
-      <img src="{{ page.image }}" property="image">
-    </div>
+    <img src="{{ page.image }}" property="image" class="hide">
   {% endif %}
   <h1 class="post-title" property="name">
     {{ page.title }}

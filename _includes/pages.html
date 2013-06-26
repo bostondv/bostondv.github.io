@@ -2,13 +2,17 @@
   {% if page.previous %}
     <div class="previous">
       <a href="{{ page.previous.url }}">
-        ‹
+        <span class="arrow">&larr;</span>
+        <span class="label">{{ page.previous.title }}</span>
       </a>
     </div>
   {% endif %}
   {% if page.next %}
     <div class="next">
-      <a href="{{page.next.url}}">›</a>
+      <a href="{{ page.next.url }}">
+        <span class="label">{{ page.next.title }}</span>
+        <span class="arrow">&rarr;</span>
+      </a>
     </div>
   {% endif %}
 </section>

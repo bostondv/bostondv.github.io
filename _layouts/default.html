@@ -7,6 +7,9 @@
   </head>
   <body class="page--{{ page.class }}">
     {% include header.html %}
+    {% if page.image %}
+      <div class="post-image" style="background-image: url({{ page.image }});"></div>
+    {% endif %}
     <div class="wrapper">
       <div class="content">
         {{ content }}
