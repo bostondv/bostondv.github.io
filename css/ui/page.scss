@@ -16,3 +16,19 @@ html, body {
   max-width: 45em;
   padding: 0 0 2em;
 }
+
+.sidebar {
+  font-size: 0.9em;
+  color: lighten($text-color, 20%);
+}
+
+/**
+ * Author signoff
+ */
+.signoff {
+  border-top: 2px solid #eee;
+  margin: 0 0 2em;
+  padding: 2em 0 0;
+  position: relative;
+  text-align: center;
+}

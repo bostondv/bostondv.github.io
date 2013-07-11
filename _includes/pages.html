@@ -1,3 +1,4 @@
+{% if page.previous or page.next %}
 <section class="paging">
   {% if page.previous %}
     <div class="previous">
@@ -16,3 +17,4 @@
     </div>
   {% endif %}
 </section>
+{% endif %}

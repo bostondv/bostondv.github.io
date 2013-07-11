@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content="{{ page.title }} &ndash; {{ site.title }}" property="og:title">
-    <title>{{ page.title }} &ndash; {{ site.title }}</title>
+    <meta content="{{ page.title }}" property="og:title">
+    <title>{{ page.title }}</title>
     {% include head.html %}
   </head>
   <body class="page--{{ page.class }}">
@@ -13,6 +13,9 @@
     <div class="wrapper">
       <div class="content">
         {{ content }}
+      </div>
+      <div class="sidebar">
+        {% include signoff.html %}
       </div>
     </div>
     {% include footer.html %}
