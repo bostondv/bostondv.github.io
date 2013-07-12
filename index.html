@@ -7,7 +7,7 @@ title: Boston Dell-Vandenberg
 <ul class="post-list">
   {% for post in site.posts %}
   <li vocab="http://schema.org/" typeof="article">
-    <time class="post-date" datetime="{{ post.date }}" property="date">{{ post.date | date_to_long_string }}</time>
+    <!-- <time class="post-date" datetime="{{ post.date }}" property="date">{{ post.date | date_to_long_string }}</time> -->
     <h2 class="post-title" property="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
   </li>
   {% endfor %}

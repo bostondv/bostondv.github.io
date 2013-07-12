@@ -9,9 +9,9 @@
   }
 
   .signoff {
-    text-align: left;
     overflow: hidden;
     .avatar {
+      text-align: left;
       float: left;
       margin: 0 5% 0.25em 0;
       width: 12.5%;
@@ -19,6 +19,13 @@
     .description {
       float: left;
       width: 82.5%;
+    }
+  }
+
+  .dribbble-gallery {
+    li {
+      float: left;
+      width: 33%;
     }
   }
 
@@ -53,7 +60,14 @@
     border: 0;
     padding: 0;
     .description {
-      text-align: justify;
+      text-align: left;
+    }
+  }
+
+  .dribbble-gallery {
+    li {
+      float: left;
+      width: 33%;
     }
   }
 

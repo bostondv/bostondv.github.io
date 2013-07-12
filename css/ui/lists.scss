@@ -29,3 +29,18 @@
     }
   }
 }
+
+/**
+ * Dribble gallery
+ */
+.dribbble-gallery {
+  list-style: none;
+  padding: 0;
+  @extend .cf;
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+  }
+}
