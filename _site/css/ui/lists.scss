@@ -1,0 +1,66 @@
+/*------------------------------------*\
+  $LISTS
+\*------------------------------------*/
+
+/**
+ * Style for post archive / lists
+ */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2em;
+  .post-title {
+    margin: 0;
+    font-size: 2.4em;
+  }
+  .post-date {
+    display: block;
+  }
+  li {
+    border-bottom: 2px solid #eee;
+    margin: 0;
+    padding: 1em 0;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+/**
+ * Dribble gallery
+ */
+.dribbble-gallery {
+  list-style: none;
+  padding: 0;
+  @extend .cf;
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+  }
+}
+
+/**
+ * Projects list
+ */
+.projects-list {
+  .post-image {
+    display: block;
+    height: 18em;
+    margin: 0;
+    position: relative;
+  }
+  .post-title {
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    text-shadow: 0 1px 0.1em rgba(0, 0, 0, 0.75);
+  }
+}

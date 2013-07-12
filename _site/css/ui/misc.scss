@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  $MISC
+\*------------------------------------*/
+
+/**
+ * Avatar
+ */
+.avatar {
+  display: inline-block;
+  img {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 100%;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/**
+ * Clearfix
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
