@@ -11,7 +11,7 @@ links:
     url:          /
     class:        home
   - name:         Projects
-    url:          /projects
+    url:          /topic/projects
     class:        projects
   - name:         About
     url:          /about
@@ -20,6 +20,7 @@ links:
 pygments:         true
 permalink:        /:year/:month/:title
 paginate:         10
+#paginate_path:    /p/:num # will be fixed in 1.1
 markdown:         rdiscount
 rdiscount:
   extensions:     [smart]
@@ -33,3 +34,6 @@ dribbble_set:
   is_list:         true
   a_target:        '_blank'
   full_size:       true
+
+category_dir:      topic
+category_title_prefix: ''

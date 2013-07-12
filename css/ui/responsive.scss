@@ -1,14 +1,9 @@
-
 /**
- * Style adjustments for tablet sized screens
+ * Style adjustments for tablet sized screens only
  */
 @media only screen and (min-width: 45em) and (max-width: 68em) {
 
-  .wrapper {
-    margin: 0 auto;
-  }
-
-  .signoff {
+.signoff {
     overflow: hidden;
     .avatar {
       text-align: left;
@@ -19,7 +14,21 @@
     .description {
       float: left;
       width: 82.5%;
+      p {
+        margin-top: 0
+      }
     }
+  }
+}
+
+
+/**
+ * Style adjustments for tablet sized screens and up
+ */
+@media only screen and (min-width: 45em) {
+
+  .wrapper {
+    margin: 0 auto;
   }
 
   .dribbble-gallery {
@@ -29,11 +38,24 @@
     }
   }
 
+  .paging {
+    overflow: hidden;
+    .next {
+      float: right;
+      width: 45%;
+    }
+    .previous {
+      float: left;
+      margin-right: 10%;
+      width: 45%;
+    }
+  }
+
 }
 
 
 /**
- * Style adjustments for desktop sized screens
+ * Style adjustments for desktop sized screens and up
  */
 @media only screen and (min-width: 69em) {
 

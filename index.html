@@ -5,7 +5,7 @@ title: Boston Dell-Vandenberg
 ---
 
 <ul class="post-list">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <li vocab="http://schema.org/" typeof="article">
     <!-- <time class="post-date" datetime="{{ post.date }}" property="date">{{ post.date | date_to_long_string }}</time> -->
     <h2 class="post-title" property="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -13,3 +13,35 @@ title: Boston Dell-Vandenberg
   {% endfor %}
 </ul>
 
+<div class="paging">
+  <div class="previous">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a href="/">
+      {% else %}
+      <a href="/page{{ paginator.previous_page }}">
+      {% endif %}
+        <span class="arrow">&larr;</span>
+        <span class="label">Previous</span>
+      </a>
+    {% else %}
+      <span class="muted">
+        <span class="arrow">&larr;</span>
+        <span class="label">Previous</span>
+      </span>
+    {% endif %}
+  </div>
+  <div class="next">
+    {% if paginator.next_page %}
+      <a href="/page{{ paginator.next_page }}">
+        <span class="label">Next</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+    {% else %}
+      <span class="muted">
+        <span class="label">Next</span>
+        <span class="arrow">&rarr;</span>
+      </span>
+    {% endif %}
+  </div>
+</div>

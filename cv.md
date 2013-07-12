@@ -6,7 +6,7 @@ class: cv
 ---
 
 __Boston Dell-Vandenberg__  
-_Web Developer & Designer_
+_Web Designer & Developer_
 
 ### About
 

@@ -1,0 +1,23 @@
+---
+layout: default
+class: category
+---
+
+<h1 class="post-title category-title">{{ page.category | capitalize }}</h1>
+
+<p><em>This is a collection of some recent and favourite projects I've worked on.</em></p>
+
+<ul class="post-list {{ page.category }}-list">
+  {% for post in site.categories[page.category] %}
+  <li vocab="http://schema.org/" typeof="article">
+    <!-- <time class="post-date" datetime="{{ post.date }}" property="date">{{ post.date | date_to_long_string }}</time> -->
+    {% if post.image %}
+      <a href="{{ post.url }}" class="post-image" style="background-image: url({{ post.image }});">
+        <h2 class="post-title" property="name">{{ post.title }}</h2>
+      </a>
+    {% endif %}
+    <!-- {{ post.content | split:"<!-- more -->" | first | markdownify }} -->
+  </li>
+  {% endfor %}
+</ul>
+

@@ -44,3 +44,23 @@
     display: block;
   }
 }
+
+/**
+ * Projects list
+ */
+.projects-list {
+  .post-image {
+    display: block;
+    height: 18em;
+    margin: 0;
+    position: relative;
+  }
+  .post-title {
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    text-shadow: 0 1px 0.1em rgba(0, 0, 0, 0.75);
+  }
+}
