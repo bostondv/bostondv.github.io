@@ -7,15 +7,7 @@
   </head>
   <body class="page--{{ page.class }}">
     {% include header.html %}
-    {% include hero.html %}
-    <div class="wrapper">
-      <div class="content">
-        {{ content }}
-      </div>
-      <div class="sidebar">
-        {% include signoff.html %}
-      </div>
-    </div>
+    {{ content }}
     {% include footer.html %}
   </body>
 </html>

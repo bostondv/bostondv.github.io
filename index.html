@@ -4,44 +4,69 @@ class: home
 title: Boston Dell-Vandenberg
 ---
 
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li vocab="http://schema.org/" typeof="article">
-    <!-- <time class="post-date" datetime="{{ post.date }}" property="date">{{ post.date | date_to_long_string }}</time> -->
-    <h2 class="post-title" property="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  </li>
-  {% endfor %}
-</ul>
+<!-- TODO: refactor better? -->
+{% if paginator.page == 1 %}
+  {% assign post_offset = 1 %}
+{% else %}
+  {% assign post_offset = 0 %}
+{% endif %}
 
-<div class="paging">
-  <div class="previous">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-      <a href="/">
-      {% else %}
-      <a href="/page{{ paginator.previous_page }}">
-      {% endif %}
-        <span class="arrow">&larr;</span>
-        <span class="label">Previous</span>
-      </a>
-    {% else %}
-      <span class="muted">
-        <span class="arrow">&larr;</span>
-        <span class="label">Previous</span>
-      </span>
-    {% endif %}
+{% if paginator.page == 1 %}
+  {% for post in paginator.posts limit:1 %}
+    <a vocab="http://schema.org/" typeof="article" class="post-image" style="background-image: url({{ post.image }});" href="{{ post.url }}">
+      <h2 class="post-title" property="name">{{ post.title }}</h2>
+      <div clas="post-excerpt" property="description">
+        {{ post.content | split:"<!-- more -->" | first | markdownify }}
+      </div>
+    </a>
+  {% endfor %}
+{% endif %}
+
+<div class="wrapper">
+  <div class="content">
+
+    <ul class="post-list">
+      {% for post in paginator.posts offset:post_offset %}
+      <li vocab="http://schema.org/" typeof="article">
+        <!-- <time class="post-date" datetime="{{ post.date }}" property="date">{{ post.date | date_to_long_string }}</time> -->
+        <h2 class="post-title" property="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="paging">
+      <div class="previous">
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+          <a href="/">
+          {% else %}
+          <a href="/page{{ paginator.previous_page }}">
+          {% endif %}
+            <span class="arrow">&larr;</span>
+            <span class="label">Previous</span>
+          </a>
+        {% else %}
+          <span class="muted">
+            <span class="arrow">&larr;</span>
+            <span class="label">Previous</span>
+          </span>
+        {% endif %}
+      </div>
+      <div class="next">
+        {% if paginator.next_page %}
+          <a href="/page{{ paginator.next_page }}">
+            <span class="label">Next</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        {% else %}
+          <span class="muted">
+            <span class="label">Next</span>
+            <span class="arrow">&rarr;</span>
+          </span>
+        {% endif %}
+      </div>
+    </div>
+
   </div>
-  <div class="next">
-    {% if paginator.next_page %}
-      <a href="/page{{ paginator.next_page }}">
-        <span class="label">Next</span>
-        <span class="arrow">&rarr;</span>
-      </a>
-    {% else %}
-      <span class="muted">
-        <span class="label">Next</span>
-        <span class="arrow">&rarr;</span>
-      </span>
-    {% endif %}
-  </div>
+  {% include sidebar.html %}
 </div>

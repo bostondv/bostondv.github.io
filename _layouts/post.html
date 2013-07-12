@@ -1,21 +1,33 @@
 ---
 layout: default
 ---
-<section class="post" vocab="http://schema.org/" typeof="article">
-  {% if page.image %}
-    <img src="{{ page.image }}" property="image" class="hide">
-  {% endif %}
-  <h1 class="post-title" property="name">
-    {{ page.title }}
-  </h1>
-  <div class="post-content" property="articlebody">
-    {{ content }}
-  </div>
-  {% if page.date %}
-    {% include meta.html %}
-  {% endif %}
-</section>
-{% include pages.html %}
-{% if page.disqus != 'false' and page.date %}
-  {% include disqus.html %}
+
+{% if page.image %}
+  <div class="post-image" style="background-image: url({{ page.image }});"></div>
 {% endif %}
+
+<div class="wrapper">
+  <div class="content">
+
+    <section class="post" vocab="http://schema.org/" typeof="article">
+      {% if page.image %}
+        <img src="{{ page.image }}" property="image" class="hide">
+      {% endif %}
+      <h1 class="post-title" property="name">
+        {{ page.title }}
+      </h1>
+      <div class="post-content" property="articlebody">
+        {{ content }}
+      </div>
+      {% if page.date %}
+        {% include meta.html %}
+      {% endif %}
+    </section>
+    {% include pages.html %}
+    {% if page.disqus != 'false' and page.date %}
+      {% include disqus.html %}
+    {% endif %}
+
+  </div>
+  {% include sidebar.html %}
+</div>

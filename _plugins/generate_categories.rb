@@ -11,7 +11,7 @@
 # A generator that creates category pages for jekyll sites.
 #
 # To use it, simply drop this script into the _plugins directory of your Jekyll site. You should
-# also create a file called 'category_index.html' in the _layouts directory of your jekyll site
+# also create a file called 'category.html' in the _layouts directory of your jekyll site
 # with the following contents (note: you should remove the leading '# ' characters):
 #
 # ================================== COPY BELOW THIS LINE ==================================
@@ -105,7 +105,7 @@ module Jekyll
     #  +category_dir+ is the String path between <source> and the category folder.
     #  +category+     is the category currently being processed.
     def initialize(site, base, category_dir, category)
-      template_path = File.join(base, '_layouts', 'category_index.html')
+      template_path = File.join(base, '_layouts', 'category.html')
       super(template_path, 'index.html', site, base, category_dir, category)
     end
 
@@ -137,7 +137,7 @@ module Jekyll
     # writes the output to a file.
     #
     #  +category+ is the category currently being processed.
-    def write_category_index(category)
+    def write_category(category)
       target_dir = GenerateCategories.category_dir(self.config['category_dir'], category)
       index      = CategoryIndex.new(self, self.source, target_dir, category)
       if index.render?
@@ -158,15 +158,15 @@ module Jekyll
     end
 
     # Loops through the list of category pages and processes each one.
-    def write_category_indexes
-      if self.layouts.key? 'category_index'
+    def write_categoryes
+      if self.layouts.key? 'category'
         self.categories.keys.each do |category|
-          self.write_category_index(category)
+          self.write_category(category)
         end
 
       # Throw an exception if the layout couldn't be found.
       else
-        throw "No 'category_index' layout found."
+        throw "No 'category' layout found."
       end
     end
 
@@ -181,7 +181,7 @@ module Jekyll
     CATEGORY_DIR = 'categories'
 
     def generate(site)
-      site.write_category_indexes
+      site.write_categoryes
     end
 
     # Processes the given dir and removes leading and trailing slashes. Falls
