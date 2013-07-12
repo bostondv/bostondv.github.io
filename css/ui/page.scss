@@ -1,0 +1,37 @@
+/*------------------------------------*\
+  $PAGE
+\*------------------------------------*/
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin-bottom: 2em;
+}
+
+/**
+ * Page level wrapper
+ */
+.wrapper {
+  margin: 0 2em;
+  max-width: 45em;
+  padding: 0 0 2em;
+}
+
+.sidebar {
+  font-size: 0.9em;
+  color: lighten($text-color, 20%);
+}
+
+/**
+ * Author signoff
+ */
+.signoff {
+  .avatar {
+    display: block;
+    text-align: center;
+  }
+  border-top: 2px solid #eee;
+  margin: 0 0 2em;
+  padding: 2em 0 0;
+  position: relative;
+}
