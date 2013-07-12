@@ -16,9 +16,6 @@ layout: default
   {% endif %}
 </section>
 {% include pages.html %}
-{% if page.share == 'y' %}
-  {% include share.html %}
-{% endif %}
-{% if page.disqus == 'y' %}
+{% if page.disqus != 'false' and page.date %}
   {% include disqus.html %}
 {% endif %}

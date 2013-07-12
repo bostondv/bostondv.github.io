@@ -7,60 +7,6 @@
     <atom:link href="http://bostondv.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Project example</title>
-        <description>&lt;p&gt;I am a placeholder post. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-
-&lt;blockquote&gt;&lt;p&gt;Boom. I am a blockquote.&lt;/p&gt;
-
-&lt;p&gt;Say something really clever here.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;List&lt;/li&gt;
-&lt;li&gt;&lt;h2&gt;List&lt;/h2&gt;&lt;/li&gt;
-&lt;li&gt;List
-
-&lt;ul&gt;
-&lt;li&gt;List&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;List&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Hello&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;List&lt;/li&gt;
-&lt;li&gt;&lt;h2&gt;List&lt;/h2&gt;&lt;/li&gt;
-&lt;li&gt;List
-
-&lt;ol&gt;
-&lt;li&gt;List&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;List&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;whaaa&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;I have a friend called Bobobmob.&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Thu, 06 Jun 2013 00:00:00 -0400</pubDate>
-        <link>http://bostondv.github.io/2013/06/project-example</link>
-        <guid isPermaLink="true">http://bostondv.github.io/2013/06/project-example</guid>
-      </item>
-    
-      <item>
         <title>Scribble, the Jekyll theme</title>
         <description>&lt;p&gt;There is no clever design philosophy to talk about, I tried to find something to work with, and &amp;lsquo;scribble&amp;rsquo; came to my mind. This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS &amp;amp; CoffeeScript, though .scss &amp;amp; .coffee files wouldn&amp;rsquo;t be included in the theme.&lt;/p&gt;
 
@@ -123,14 +69,17 @@ Date is not a required header since Jekyll reads the file name for date, this wa
 &lt;p&gt;Like it? &lt;a href=&quot;http://twitter.com/muanchiou&quot;&gt;Tell me&lt;/a&gt;.&lt;br/&gt;
 Problem? &lt;a href=&quot;https://github.com/muan/scribble&quot;&gt;Use GitHub Issues&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 06 May 2013 12:27:31 -0400</pubDate>
-        <link>http://bostondv.github.io/2013/05/scribble-the-jekyll-theme</link>
-        <guid isPermaLink="true">http://bostondv.github.io/2013/05/scribble-the-jekyll-theme</guid>
+        <pubDate>Fri, 12 Jul 2013 00:00:00 -0400</pubDate>
+        <link>http://bostondv.github.io/2013/07/scribble-the-jekyll-theme</link>
+        <guid isPermaLink="true">http://bostondv.github.io/2013/07/scribble-the-jekyll-theme</guid>
       </item>
     
       <item>
-        <title>Placeholder post</title>
+        <title>Project example</title>
         <description>&lt;p&gt;I am a placeholder post. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
 
 &lt;blockquote&gt;&lt;p&gt;Boom. I am a blockquote.&lt;/p&gt;
 
@@ -174,9 +123,9 @@ Problem? &lt;a href=&quot;https://github.com/muan/scribble&quot;&gt;Use GitHub I
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 </description>
-        <pubDate>Mon, 06 May 2013 11:27:31 -0400</pubDate>
-        <link>http://bostondv.github.io/2013/05/more-post</link>
-        <guid isPermaLink="true">http://bostondv.github.io/2013/05/more-post</guid>
+        <pubDate>Mon, 01 Jul 2013 00:00:00 -0400</pubDate>
+        <link>http://bostondv.github.io/2013/07/project-example</link>
+        <guid isPermaLink="true">http://bostondv.github.io/2013/07/project-example</guid>
       </item>
     
   </channel>
