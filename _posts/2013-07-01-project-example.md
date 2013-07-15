@@ -2,7 +2,6 @@
 layout: post
 title: Prondo
 category: projects
-image: /img/posts/boston.jpg
 ---
 
 TODO

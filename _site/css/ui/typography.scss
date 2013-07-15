@@ -180,3 +180,14 @@ blockquote {
 .muted {
   color: #ddd;
 }
+
+/**
+ * Text on photo overlay
+ */
+.overlay {
+  color: #fff;
+  text-shadow: 0 1px 0.1em rgba(0, 0, 0, 0.5);
+  a {
+    color: #fff;
+  }
+}

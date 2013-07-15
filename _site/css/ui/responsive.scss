@@ -19,6 +19,7 @@
       }
     }
   }
+
 }
 
 
@@ -48,6 +49,14 @@
       float: left;
       margin-right: 10%;
       width: 45%;
+    }
+  }
+
+  .posts-grid {
+    overflow: hidden;
+    li {
+      float: left;
+      width: 50%;
     }
   }
 
@@ -104,6 +113,12 @@
   .sidebar {
     float: left;
     width: 25%;
+  }
+
+  .posts-grid {
+    li {
+      width: 33.3%;
+    }
   }
 
   /**

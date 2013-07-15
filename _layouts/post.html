@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% if page.image %}
-  <div class="post-image" style="background-image: url({{ page.image }});"></div>
+  <div class="post-image-header" style="background-image: url({{ page.image }});"></div>
 {% endif %}
 
 <div class="wrapper">
@@ -24,7 +24,7 @@ layout: default
       {% endif %}
     </section>
     {% include pages.html %}
-    {% if page.disqus != 'false' and page.date %}
+    {% if page.disqus == 'y' %}
       {% include disqus.html %}
     {% endif %}
 

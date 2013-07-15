@@ -10,16 +10,13 @@ links:
   - name:         Articles
     url:          /
     class:        home
-  - name:         Projects
-    url:          /topic/projects
-    class:        projects
   - name:         About
     url:          /about
     class:        about
 
 pygments:         true
 permalink:        /:year/:month/:title
-paginate:         2
+paginate:         10
 #paginate_path:    /p/:num # will be fixed in 1.1
 markdown:         rdiscount
 rdiscount:
@@ -37,3 +34,11 @@ dribbble_set:
 
 category_dir:      topic
 category_title_prefix: ''
+
+image:
+  source: assets/img/_fullsize
+  output: generated
+  presets:
+    thumb:
+      width: 400
+      height: 400

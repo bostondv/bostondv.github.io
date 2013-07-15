@@ -24,6 +24,8 @@ GEM
     liquid (2.5.0)
     maruku (0.6.1)
       syntax (>= 1.0.0)
+    mini_magick (3.6.0)
+      subexec (~> 0.2.1)
     posix-spawn (0.3.6)
     pygments.rb (0.5.1)
       posix-spawn (~> 0.3.6)
@@ -31,6 +33,7 @@ GEM
     rake (10.1.0)
     rdiscount (2.1.6)
     safe_yaml (0.7.1)
+    subexec (0.2.3)
     syntax (1.0.0)
     yajl-ruby (1.1.0)
 
@@ -40,5 +43,6 @@ PLATFORMS
 DEPENDENCIES
   dir
   jekyll
+  mini_magick
   rake
   rdiscount

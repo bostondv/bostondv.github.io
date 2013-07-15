@@ -1,17 +1,17 @@
 {% if page.previous or page.next %}
 <section class="paging">
-  {% if page.previous %}
+  {% if page.next %}
     <div class="previous">
-      <a href="{{ page.previous.url }}">
+      <a href="{{ page.next.url }}">
         <span class="arrow">&larr;</span>
-        <span class="label">{{ page.previous.title }}</span>
+        <span class="label">{{ page.next.title }}</span>
       </a>
     </div>
   {% endif %}
-  {% if page.next %}
+  {% if page.previous %}
     <div class="next">
-      <a href="{{ page.next.url }}">
-        <span class="label">{{ page.next.title }}</span>
+      <a href="{{ page.previous.url }}">
+        <span class="label">{{ page.previous.title }}</span>
         <span class="arrow">&rarr;</span>
       </a>
     </div>
