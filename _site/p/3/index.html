@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content="Articles" property="og:title">
-    <title>Articles</title>
+    <meta content="Boston Dell-Vandenberg" property="og:title">
+    <title>Boston Dell-Vandenberg</title>
     <link href="/img/fav.png" rel="shortcut icon">
 <link href="http://plus.google.com/117592463170611588107" rel="author">
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:700|Alegreya+SC:400,700|Merriweather:400,700italic,400italic,700" rel="stylesheet">
@@ -44,7 +44,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
   </head>
-  <body class="page--category">
+  <body class="page--home">
     <div class="header-wrapper">
   <div class="header">
     <a href="/" title="Boston Dell-Vandenberg" class="btn-home" title="Go Home">B</a>
@@ -52,40 +52,55 @@
   
     <li><a href="/" class="home">Articles</a></li>
   
+    <li><a href="/projects" class="projects">Projects</a></li>
+  
     <li><a href="/about" class="about">About</a></li>
   
 </ul>
   </div>
 </div>
-    
-  <a vocab="http://schema.org/" typeof="article" class="post-image" style="background-image: url(/img/posts/boston-coffee.jpg);" href="/2013/07/scribble-the-jekyll-theme">
-    <h2 class="post-title" property="name">Scribble, the Jekyll theme</h2>
-    <div clas="post-excerpt" property="description">
-      <p>There is no clever design philosophy to talk about, I tried to find something to work with, and &lsquo;scribble&rsquo; came to my mind. This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS &amp; CoffeeScript, though .scss &amp; .coffee files wouldn&rsquo;t be included in the theme.</p>
+    <!-- TODO: refactor better? -->
 
-    </div>
-  </a>
+  
+
+
 
 
 <div class="wrapper">
   <div class="content">
 
-    <!-- <h1 class="post-title category-title">Articles</h1>
-
-    <p><em>This is a collection of some recent and favourite projects I've worked on.</em></p> -->
-
-    <ul class="post-grid articles-list">
+    <ul class="posts-list posts-horizontal">
       
-      <li vocab="http://schema.org/" typeof="article">
-        <!-- <time class="post-date" datetime="2013-07-08 00:00:00 -0400" property="date">08 July 2013</time> -->
-        
-          <a href="/2013/07/test" class="post-image" style="background-image: url(/img/posts/boston-river.jpg);">
-            <h2 class="post-title" property="name">Test</h2>
-          </a>
-        
-      </li>
+        <li vocab="http://schema.org/" typeof="article">
+          <h2 class="post-title" property="name"><a href="/post/prondo">Prondo</a></h2>
+        </li>
+      
+        <li vocab="http://schema.org/" typeof="article">
+          <h2 class="post-title" property="name"><a href="/post/project-example">Project example example example example</a></h2>
+        </li>
       
     </ul>
+
+    <div class="paging">
+      <div class="previous">
+        
+          
+          <a href="/p/2">
+          
+            <span class="arrow">&larr;</span>
+            <span class="label">Previous</span>
+          </a>
+        
+      </div>
+      <div class="next">
+        
+          <span class="muted">
+            <span class="label">Next</span>
+            <span class="arrow">&rarr;</span>
+          </span>
+        
+      </div>
+    </div>
 
   </div>
   <div class="sidebar">
@@ -109,8 +124,6 @@
 </div>
 </div>
 </div>
-
-
     <footer></footer>
   </body>
 </html>

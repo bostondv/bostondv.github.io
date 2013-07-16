@@ -14,7 +14,7 @@ title: Boston Dell-Vandenberg
 {% if paginator.page == 1 %}
   {% for post in paginator.posts limit:1 %}
     <a vocab="http://schema.org/" typeof="article" class="post-image-header" style="background-image: url({{ post.image }});" href="{{ post.url }}">
-      <h2 class="post-title overlay" property="name">{{ post.title }}</h2>
+      <h2 class="post-title overlay" property="name"><em>Latest article:</em>{{ post.title }}</h2>
       <!-- <div clas="post-excerpt" property="description">
         {{ post.content | split:"<!-- more -->" | first | markdownify }}
       </div> -->
@@ -25,18 +25,11 @@ title: Boston Dell-Vandenberg
 <div class="wrapper">
   <div class="content">
 
-    <ul class="posts-list posts-grid">
+    <ul class="posts-list posts-horizontal">
       {% for post in paginator.posts offset:post_offset %}
-      <li vocab="http://schema.org/" typeof="article">
-        {% if post.image %}
-        <a href="{{ post.url }}" class="post-image" style="background-image: url({{ post.image }});">
-          <h2 class="post-title overlay" property="name">{{ post.title }}</h2>
-        </a>
-        {% else %}
-          <!-- <time class="post-date" datetime="{{ post.date }}" property="date">{{ post.date | date_to_long_string }}</time> -->
-          <h2 class="post-title overlay" property="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {% endif %}
-      </li>
+        <li vocab="http://schema.org/" typeof="article">
+          <h2 class="post-title" property="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </li>
       {% endfor %}
     </ul>
 
@@ -46,7 +39,7 @@ title: Boston Dell-Vandenberg
           {% if paginator.previous_page == 1 %}
           <a href="/">
           {% else %}
-          <a href="/page{{ paginator.previous_page }}">
+          <a href="/p/{{ paginator.previous_page }}">
           {% endif %}
             <span class="arrow">&larr;</span>
             <span class="label">Previous</span>
@@ -60,7 +53,7 @@ title: Boston Dell-Vandenberg
       </div>
       <div class="next">
         {% if paginator.next_page %}
-          <a href="/page{{ paginator.next_page }}">
+          <a href="/p/{{ paginator.next_page }}">
             <span class="label">Next</span>
             <span class="arrow">&rarr;</span>
           </a>

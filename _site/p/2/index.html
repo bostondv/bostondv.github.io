@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content="Project example example example example" property="og:title">
-    <title>Project example example example example</title>
+    <meta content="Boston Dell-Vandenberg" property="og:title">
+    <title>Boston Dell-Vandenberg</title>
     <link href="/img/fav.png" rel="shortcut icon">
 <link href="http://plus.google.com/117592463170611588107" rel="author">
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:700|Alegreya+SC:400,700|Merriweather:400,700italic,400italic,700" rel="stylesheet">
@@ -17,9 +17,9 @@
 <meta content="http://bostondv.github.io/img/og.jpg" property="og:image">
 <!-- <meta content="" property="fb:app_id"> -->
 
-  <meta content="http://bostondv.github.io/2013/07/project-example/" property="og:url">
-  <meta content="TODO" property="og:description">
-  <meta content="article" property="og:type">
+  <meta content="http://bostondv.github.io/" property="og:url">
+  <meta content="Musings about web development and design." property="og:description">
+  <meta content="blog" property="og:type">
 
 <!-- - -->
 <script type="text/javascript">
@@ -44,7 +44,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
   </head>
-  <body class="page--">
+  <body class="page--home">
     <div class="header-wrapper">
   <div class="header">
     <a href="/" title="Boston Dell-Vandenberg" class="btn-home" title="Go Home">B</a>
@@ -52,45 +52,55 @@
   
     <li><a href="/" class="home">Articles</a></li>
   
+    <li><a href="/projects" class="projects">Projects</a></li>
+  
     <li><a href="/about" class="about">About</a></li>
   
 </ul>
   </div>
 </div>
-    
+    <!-- TODO: refactor better? -->
+
+  
+
+
+
 
 <div class="wrapper">
   <div class="content">
 
-    <section class="post" vocab="http://schema.org/" typeof="article">
+    <ul class="posts-list posts-horizontal">
       
-      <h1 class="post-title" property="name">
-        Project example example example example
-      </h1>
-      <div class="post-content" property="articlebody">
-        <p>TODO</p>
+        <li vocab="http://schema.org/" typeof="article">
+          <h2 class="post-title" property="name"><a href="/post/scribble-the-jekyll-theme">Scribble, the Jekyll theme</a></h2>
+        </li>
+      
+        <li vocab="http://schema.org/" typeof="article">
+          <h2 class="post-title" property="name"><a href="/post/test">Placeholder post</a></h2>
+        </li>
+      
+    </ul>
 
+    <div class="paging">
+      <div class="previous">
+        
+          
+          <a href="/">
+          
+            <span class="arrow">&larr;</span>
+            <span class="label">Previous</span>
+          </a>
+        
       </div>
-      
-        <div class="post-meta">
-  <p class="post-date">&mdash; Published on <time datetime="2013-07-01 00:00:00 -0400" property="datepublished">01 July 2013</time></p>
-</div>
-      
-    </section>
-    
-<section class="paging">
-  
-    <div class="previous">
-      <a href="/2013/07/prondo">
-        <span class="arrow">&larr;</span>
-        <span class="label">Prondo</span>
-      </a>
+      <div class="next">
+        
+          <a href="/p/3">
+            <span class="label">Next</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        
+      </div>
     </div>
-  
-  
-</section>
-
-    
 
   </div>
   <div class="sidebar">
@@ -114,7 +124,6 @@
 </div>
 </div>
 </div>
-
     <footer></footer>
   </body>
 </html>

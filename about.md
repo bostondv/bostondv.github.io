@@ -8,9 +8,9 @@ image: /img/posts/boston-river.jpg
 
 <span class="dropcap">H</span><span class="run-in">ello! I'm Boston Dell-Vandenberg.</span> A multi-disciplined designer, developer and freelancer from Toronto.
 
-I run [Pomelo](http://pomelodesign.com), a boutique web development studio where we specialize in designing and building unique web and mobile applications for small-medium businesses and startups.
+I run [Pomelo](http://pomelodesign.com), a boutique web development studio focused on creating great user experiences for small-medium businesses and startups.
 
-I am passionate about creating great user experiences and inspiring designs for the web. To that extent I am an active [contributor](http://wordpress.org/plugins/enhanced-text-widget/) to WordPress [plugins](http://wordpress.org/plugins/ultimate-posts-widget/) and love tinkering with designs, code, new software and tools.
+Personally, I aspire to create designs which both usable and beautiful. I build web apps primarily with [WordPress](http://wordpress.org/), [Django](http://djangoproject.org/) and [Phonegap](http://phonegap.com/). To that extent, I am also an active contributor to [WordPress plugins](http://profiles.wordpress.org/bostondv), and I write on this [blog](/) and [Twitter](http://twitter.com/bostondv).
 
 For detailed information about my qualifications, please see [my CV](/cv/).
 

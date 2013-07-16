@@ -21,7 +21,7 @@
 .posts-horizontal {
   .post-title {
     margin: 0.5em 0 0.6em;
-    font-size: 2.4em;
+    font-size: 2em;
   }
   .post-image {
     display: none;
@@ -47,6 +47,11 @@
     position: relative;
     padding-bottom: 75%;
     overflow: hidden;
+    &:hover {
+      .post-title {
+        opacity: 1;
+      }
+    }
   }
   .post-image {
     background-size: cover;
@@ -58,12 +63,14 @@
     top: 0;
   }
   .post-title {
+    opacity: 0;
     font-size: 1.2em;
     line-height: 1;
     margin: 0;
     position: absolute;
     bottom: 0.5em;
     left: 0.5em;
+    transition: all 0.2s linear;
   }
 }
 

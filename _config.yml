@@ -10,17 +10,20 @@ links:
   - name:         Articles
     url:          /
     class:        home
+  - name:         Projects
+    url:          /projects
+    class:        projects
   - name:         About
     url:          /about
     class:        about
 
 pygments:         true
-permalink:        /:year/:month/:title
-paginate:         10
-#paginate_path:    /p/:num # will be fixed in 1.1
-markdown:         rdiscount
-rdiscount:
-  extensions:     [smart]
+permalink:        /post/:title
+paginate:         2
+paginate_path:    p/:num
+markdown:         redcarpet
+#rdiscount:
+#  extensions:     [smart]
 
 dribbble_set:
   user:            'bostondv'
@@ -31,9 +34,6 @@ dribbble_set:
   is_list:         true
   a_target:        '_blank'
   full_size:       true
-
-category_dir:      topic
-category_title_prefix: ''
 
 image:
   source: assets/img/_fullsize

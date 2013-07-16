@@ -1,0 +1,30 @@
+---
+layout: default
+class: projects
+title: Boston Dell-Vandenberg
+---
+
+{% for post in site.categories['projects'] limit:1 %}
+  <a vocab="http://schema.org/" typeof="article" class="post-image-header" style="background-image: url({{ post.image }});" href="{{ post.url }}">
+    <h2 class="post-title overlay" property="name"><em>Latest project:</em>{{ post.title }}</h2>
+  </a>
+{% endfor %}
+
+<div class="wrapper">
+  <div class="content">
+
+    <p><em>This is a collection of some recent and favourite projects I've worked on. You can also see <a href="http://pomelodesign.com">Pomelo Design</a> for more I've contributed to.</em></p>
+
+    <ul class="posts-list posts-grid">
+      {% for post in site.categories['projects'] offset:1 %}
+      <li vocab="http://schema.org/" typeof="article">
+        <a href="{{ post.url }}" class="post-image" style="background-image: url({{ post.image }});">
+          <h2 class="post-title overlay" property="name">{{ post.title }}</h2>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+  {% include sidebar.html %}
+</div>
