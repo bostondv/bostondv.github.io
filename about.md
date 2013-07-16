@@ -16,17 +16,17 @@ For detailed information about my qualifications, please see [my CV](/cv/).
 
 ## Contact
 
-Feel free to [drop me an email](mailto:me@bostondv.com). I respond to every message but am usually kept busy &mdash; so if you don&lsquo;t get a timely reply please chase me up.
+Feel free to [drop me an email](mailto:me@bostondv.com). I respond to every message but am usually kept busy &mdash; so if you don&rsquo;t get a timely reply please chase me up.
 
-I'm also active on Twitter, where you can always find me [@bostondv](http://twitter.com/bostondv).
+I'm also active on Twitter, where you can find me [@bostondv](http://twitter.com/bostondv).
 
-For work inquires please contact me at Pomelo Design by [email](mailto:info@pomelodesign.com) or by sending in a [request for quote](http://pomelodesign.com/#contact).
+For work inquires please contact me through Pomelo Design by [email](mailto:info@pomelodesign.com) or by sending in a [request for quote](http://pomelodesign.com/#contact).
 
 ## Extra
 
 This site is build on [Jekyll](http://jekyllrb.com/), an open-source static site generator. It's hosted on [GitHub Pages](http://pages.github.com/).
 
-This site is developed openly - you can browse the source code on [GitHub](https://github.com/bostondv/bostondv.github.io). Please note however that any custom code, design and words remains under my copyright. If you notice any issues with the site please [submit an issue](https://github.com/bostondv/bostondv.github.io/issues).
+This site is developed openly &mdash; you can browse the source code on [GitHub](https://github.com/bostondv/bostondv.github.io). Please note however that any custom code, design and words remains under my copyright. If you notice any issues with the site please [submit an issue](https://github.com/bostondv/bostondv.github.io/issues).
 
 *Have a great day!*
 

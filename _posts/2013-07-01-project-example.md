@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prondo
+title: Project example example example example
 category: projects
 ---
 
