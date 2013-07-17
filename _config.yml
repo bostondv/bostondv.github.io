@@ -22,8 +22,6 @@ permalink:        /post/:title
 paginate:         2
 paginate_path:    p/:num
 markdown:         redcarpet
-#rdiscount:
-#  extensions:     [smart]
 
 dribbble_set:
   user:            'bostondv'
@@ -36,9 +34,12 @@ dribbble_set:
   full_size:       true
 
 image:
-  source: assets/img/_fullsize
+  source: img/photos
   output: generated
   presets:
     thumb:
       width: 400
       height: 400
+    medium:
+      width: 654
+      height: auto

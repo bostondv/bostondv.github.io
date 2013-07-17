@@ -19,14 +19,19 @@ layout: default
       <div class="post-content" property="articlebody">
         {{ content }}
       </div>
-      {% if page.date %}
-        {% include meta.html %}
-      {% endif %}
+      <div class="post-meta">
+        <ul>
+          <li><strong>Roles:</strong> {{ page.roles | array_to_sentence_string }}</li>
+          <li><strong>Type:</strong> {{ page.type | array_to_sentence_string }}</li>
+          <li><a href="{{ page.site }}" class="btn">View Project &rarr;</a></li>
+        </ul>
+      </div>
     </section>
     {% include pages.html %}
     {% if page.disqus == 'y' %}
       {% include disqus.html %}
     {% endif %}
+
   </div>
   {% include sidebar.html %}
 </div>

@@ -232,21 +232,29 @@ Problem? &lt;a href=&quot;https://github.com/muan/scribble&quot;&gt;Use GitHub I
       </item>
     
       <item>
-        <title>Prondo</title>
-        <description>&lt;p&gt;TODO&lt;/p&gt;
-</description>
-        <pubDate>Tue, 02 Jul 2013 00:00:00 -0400</pubDate>
-        <link>http://bostondv.github.io/post/prondo</link>
-        <guid isPermaLink="true">http://bostondv.github.io/post/prondo</guid>
-      </item>
-    
-      <item>
         <title>Project example example example example</title>
         <description>&lt;p&gt;TODO&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jul 2013 00:00:00 -0400</pubDate>
         <link>http://bostondv.github.io/post/project-example</link>
         <guid isPermaLink="true">http://bostondv.github.io/post/project-example</guid>
+      </item>
+    
+      <item>
+        <title>Power Pitch</title>
+        <description>&lt;p&gt;&lt;span class=&quot;run-in&quot;&gt;I was asked to create a mobile sales tool for &lt;a href=&quot;http://prondo.mobi&quot;&gt;Prondo&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The design was aimed to be fresh and stand out from the typical corporate fare. It utilizes flat design, friendly typography and simple layouts to help make the app fun and easy to use. &lt;/p&gt;
+
+&lt;p&gt;We chose jQuery mobile and Phonegap for the implementation due it its quick development cycle, cross platform deployment and ease of sharing a frontend codebase with the mobile app and desktop web app.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Check out the app on &lt;a href=&quot;https://itunes.apple.com/us/app/n-series-power-pitch/id587883814&quot;&gt;iTunes&lt;/a&gt; and &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.prondo.nseries&quot;&gt;Google Play&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/generated/projects/power-pitch-654x0-41a908.jpg&quot; &gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Apr 2013 00:00:00 -0400</pubDate>
+        <link>http://bostondv.github.io/post/prondo</link>
+        <guid isPermaLink="true">http://bostondv.github.io/post/prondo</guid>
       </item>
     
   </channel>
